@@ -1,3 +1,5 @@
+set -e 
+ARCHIVE=ARCHIVE=defects4j-repos-v2.zip
 main(){
 # The BSD version of stat does not support --version or -c
     if stat --version &> /dev/null; then

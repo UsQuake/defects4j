@@ -1,4 +1,6 @@
-project_repos/
+project_repos/*.git
+project_repos/*.zip
+project_repos/jfreechart
 major/
 framework/test/*.log
 framework/lib/test_generation

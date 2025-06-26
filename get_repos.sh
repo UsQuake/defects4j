@@ -1,11 +1,7 @@
-set -e
-
-# The name of the archive that contains all project repos
-ARCHIVE=defects4j-repos-v2.zip
-
-main() {
-    # The BSD version of stat does not support --version or -c
+main(){
+# The BSD version of stat does not support --version or -c
     if stat --version &> /dev/null; then
+
         # GNU version
         cmd="stat -c %Y $ARCHIVE"
     else
@@ -77,6 +73,3 @@ download_url() {
 }
 
 main
-
-# Extract new repos
-unzip -q -u $ARCHIVE && mv defects4j/project_repos/* . && rm -r defects4j
